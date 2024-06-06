@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações</title>
+    <link rel="stylesheet" href="style.css">   <!--Substitua 'seucss.css' pelo caminho do seu arquivo CSS -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+</head>
+<body>
+
+    <!--BANNER-->
+    <div class="banner">
+        <div class="text_banner"></div>
+    </div>
+    <div class="frase"></div>
+    <h2>"Faça sua Doação"</h2>
+    <br><br>
+    <h3>Doar é Salvar vidas</h3>
+</div>
+    <form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Telefone:</label>
+        <input type="phone" id="phone" required><br><br>
+
+        <label for="imagem">Imagem do Celular:</label>
+        <input type="file" id="imagem" accept="image/*"> <!-- Campo para fazer upload de imagens do celular -->
+
+        <button type="button" onclick="enviarDadosParaFirebase()">Enviar</button>
+        <script src="api.js"></script>
+    </form>
+
+    <footer id="rodape">
+        <p>&copy;2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
