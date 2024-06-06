@@ -1,0 +1,142 @@
+/* CONFIGURAÇÃO DA PAGINA  */
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+input[type="text"],select {
+    width: 100%;
+    padding: 10px;
+   margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+
+    button:hover {
+    background-color: #45a049;
+
+}
+button:active {
+  transform: translateY(1px); /* Efeito de clique sutil */
+}
+
+/* CABEÇALHO*/
+  h1{
+    text-align: center;
+  }
+
+  form{
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px; /* Espaço abaixo do label para clareza */
+    font-weight: bold; /* Destaque para o texto do label */
+}
+ 
+
+/* Limpar o estilo do navegador padrão para imagens em listas */
+ul {
+  list-style-type: none; /* Remover marcadores de lista */
+  padding-left: 0; /* Ajustar alinhamento */
+}
+
+li {
+  margin-bottom: 10px; /* Espaçamento entre itens da lista */
+  padding: 10px;
+  background-color: #e9ecef; /* Diferenciação sutil de itens */
+  border-radius: 4px;
+}
+
+* Imagens dentro de itens da lista */
+img {
+    max-width: 100px; /* Limitação do tamanho da imagem para uniformidade */
+    height: auto;
+    display: block; /* Correção de alinhamento */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        margin: 30px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 35px;
+  
+    }
+}
